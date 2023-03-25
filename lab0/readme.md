@@ -9,7 +9,7 @@
 ### Код программы 
 https://github.com/ksu9999/TMP/blob/master/lab0/lab0.puml
 
-```javascript
+```
 @startuml
 class тест{
   +номер теста
