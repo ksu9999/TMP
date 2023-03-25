@@ -6,7 +6,20 @@
 ### 3. Прикрепить ссылку не репозиторий к практической работе 
 ##
 ## Результаты работы:
-### Код представлен в файле lab0.pulm
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab0/lab0.pulm)
-### Диаграмма представлена в файле d.png
+### Код программы
+@startuml
+left to right direction
+skinparam packageStyle rect
+actor клиент
+actor банк
+rectangle банкомат {
+    клиент-- (проверка баланса)
+    клиент-- (снятие наличных)
+    клиент-- (положить наличные на карту)
+    (снятие наличных) .> (проверка баланса) : extends
+    банк -- (проверить остатки наличных)
+    банк -- (мониторинг работы)
+}
+@enduml
+### Диаграмма
 ![alt text](https://github.com/ksu9999/TMP/blob/master/lab0/d.png)
