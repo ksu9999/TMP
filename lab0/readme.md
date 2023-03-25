@@ -7,6 +7,7 @@
 ##
 ## Результаты работы:
 ### Код программы
+'''
 @startuml
 left to right direction
 skinparam packageStyle rect
@@ -21,5 +22,6 @@ rectangle банкомат {
     банк -- (мониторинг работы)
 }
 @enduml
+'''
 ### Диаграмма
 ![alt text](https://github.com/ksu9999/TMP/blob/master/lab0/d.png)
