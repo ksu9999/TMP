@@ -8,3 +8,4 @@
 ## Результаты работы:
 ### Код представлен в файле lab0.pulm
 ### Диаграмма представлена в файле d.png
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab0/d.png)
