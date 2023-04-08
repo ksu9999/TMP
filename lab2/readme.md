@@ -17,7 +17,7 @@ Foo3 -> Foo1 : Отчет
 @enduml
 ```
 ### Диаграмма последовательности
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab1/d3.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab2/d3.png)
 ### Код программы для диаграммы развёртывания
 ```
 @startuml
@@ -37,4 +37,4 @@ HTTP_сервер -- WebLogic_сервер
 @enduml
 ```
 ### Диаграмма развёртывания
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab1/d4.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab2/d4.png)
