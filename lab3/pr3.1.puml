@@ -1,0 +1,31 @@
+@startuml
+title Пратическая работа 3: Strategy
+class Oper{
+do_work()
+}
+class Calculator{
+strategy: Oper
+set_strategy()
+calculate()
+}
+
+class Adder{
+do_work()
+}
+class Subtractor{
+do_work()
+}
+class Multiplicator{
+do_work()
+}
+class main{
+int n
+str vvod
+}
+
+Adder --> Oper
+Subtractor --> Oper
+Multiplicator --> Oper
+main *--> Oper
+main -- Calculator
+@enduml

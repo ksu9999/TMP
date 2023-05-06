@@ -1,0 +1,31 @@
+@startuml
+title Пратическая работа 3: Template Method
+class Statistics{
+templateMethod()
+pr1()
+pr2()
+pr3()
+pr4()
+}
+
+note right of Statistics::"templateMethod()"
+self.pr1()
+self.pr2()
+self.pr3()
+self.pr4()
+end note
+
+class StudentA{
+pr2()
+pr3()
+}
+class  StudentB{
+pr1()
+pr3()
+pr4()
+}
+
+Statistics <|-- StudentA 
+Statistics <|-- StudentB 
+
+@enduml
