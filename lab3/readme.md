@@ -34,7 +34,7 @@ main -- Calculator
 @enduml
 ```
 ### Диаграмма паттерна Стратегия
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab3/pr.3.1.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab3/pr3.1.png)
 ### Код программы для реализации паттерна Стратегия
 ```
 # coding=windows-1251
@@ -127,7 +127,7 @@ Statistics <|-- StudentB
 @enduml
 ```
 ### Диаграмма паттерна Шаблонный метод
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab3/pr.3.2.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab3/pr3.2.png)
 ### Код программы для реализации паттерна Шаблонный метод
 ```
 # coding=windows-1251
