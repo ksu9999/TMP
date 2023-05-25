@@ -1,0 +1,59 @@
+@startuml
+title Пратическая работа 5: Builder
+
+class main{
+director = Director()
+int a
+}
+
+class Director{
+init()
+set_builder(self, builder: Builder)
+make_bur(self)
+}
+
+class Builder{
+add_sauce(self)
+add_meal(self)
+add_topping(self)
+add_cheese(self)
+prepare_botbread(self)
+get_bur(self)
+}
+
+class  Cheeseburger{
+init()
+add_sauce(self)
+add_meal(self)
+add_topping(self)
+add_cheese(self)
+prepare_botbread(self)
+get_bur(self)
+}
+
+class Humburger{
+init()
+add_sauce(self)
+add_meal(self)
+add_topping(self)
+add_cheese(self)
+prepare_botbread(self)
+get_bur(self)
+}
+
+class Burger{
+init()
+printer(self)
+}
+
+class Product{
+}
+
+main->Director
+Director->Builder
+Builder<..Cheeseburger
+Builder<..Humburger
+Cheeseburger-down->Burger
+Humburger->Burger
+Burger->Product
+@enduml

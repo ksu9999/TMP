@@ -1,0 +1,40 @@
+@startuml
+title Пратическая работа 5: Mediator
+
+class main{
+printl()
+mediator = ChatMediator()
+user1 = ConcreteUser()
+user2 = ConcreteUser()
+user3 = ConcreteUser()
+user4 = ConcreteUser()
+}
+
+class User{
+init()
+send(self, msg)
+sendA(self, msg)
+sendB(self, msg)
+receive(self, msg)
+}
+
+class ChatMediator{
+init()
+add_user(self, user)
+send_message(self, msg, user)
+send_messageA(self,msg,user)
+send_messageB(self,msg,user)
+}
+
+class ConcreteUser{
+send(self, msg)
+sendA(self, msg)
+sendB(self, msg)
+receive(self, msg)
+}
+
+main->User
+User<..ConcreteUser
+User<..ChatMediator
+ChatMediator *--> ConcreteUser
+@enduml

@@ -1,0 +1,44 @@
+@startuml
+title Пратическая работа 5: Abstract Factory
+
+class main{
+create_factory(objectname)
+create_Socks()
+}
+
+class SocksAbstractFactory{
+getSocks(self)
+}
+
+class RedSocksFactory{
+getSocks(self)
+}
+
+class  BlackSocksFactory{
+getSocks(self)
+}
+
+class RedSocks{
+init()
+create(self)
+}
+
+class BlackSocks{
+init()
+create(self)
+}
+
+class Socks{
+init()
+create(self)
+}
+
+main->SocksAbstractFactory
+SocksAbstractFactory<- RedSocksFactory
+SocksAbstractFactory<-BlackSocksFactory
+
+RedSocksFactory..>RedSocks
+RedSocks->Socks
+BlackSocksFactory..>BlackSocks
+BlackSocks-down->Socks
+@enduml

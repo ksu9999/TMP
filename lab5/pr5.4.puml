@@ -1,0 +1,31 @@
+@startuml
+title Пратическая работа 5: Mediator
+
+class main{
+ad = AdapterEuroInUsa()
+us = UsaSocket()
+}
+
+class UsaFork{
+power_usa(self)
+}
+
+class EuroFork{
+power_euro(self)
+}
+
+class UsaSocket{
+init()
+connect(self)
+}
+
+class AdapterEuroInUsa{
+init()
+power_usa(self)
+}
+
+main->UsaSocket
+main<..AdapterEuroInUsa
+AdapterEuroInUsa->EuroFork
+UsaSocket -> UsaFork
+@enduml
