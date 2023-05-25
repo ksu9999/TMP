@@ -98,7 +98,7 @@ if __name__ == "__main__":
         print("Итерация №" + str(item))
 ```
 ### Результат реализации паттерна Итератор
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab4/rr.4.1.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab4/rr4.1.png)
 ### Код программы для диаграммы паттерна Посетитель
 ```
 @startuml
@@ -283,4 +283,4 @@ while n==1:
 print("Спасибо, что выбрали нашу компанию!")
 ```
 ### Результат реализации паттерна Посетитель
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab4/rr.4.2.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab4/rr4.2.png)
