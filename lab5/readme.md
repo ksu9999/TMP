@@ -502,7 +502,7 @@ UsaSocket -> UsaFork
 ```
 ### Диаграмма паттерна Адаптер
 ![alt text](https://github.com/ksu9999/TMP/blob/master/lab5/pr5.4.png)
-### Код программы для реализации паттерна Адаптер
+### Код программы для реализации паттерна Адаптер 
 ```
 class UsaFork:
     def power_usa(self):
