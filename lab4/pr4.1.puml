@@ -1,0 +1,39 @@
+@startuml
+title Пратическая работа 4: Iterator
+
+class iterNum{
+init()
+str()
+}
+
+class  Iterator{
+next(self)
+has_next(self)
+}
+
+class iterNumIterator{
+init()
+next(self)
+has_next(self)
+}
+
+class iterAggregate{
+init()
+amount_num()
+iterator()
+}
+
+class main{
+iter = iterAggregate(5)
+iterator = iter.iterator()
+}
+
+main -> iterAggregate
+main ..>Iterator:<<create>>
+iterNumIterator <.. iterAggregate: <<create>>
+iterNumIterator o-- iterAggregate
+iterNumIterator --> Iterator
+iterNum <-up- Iterator
+iterNum <- iterAggregate
+
+@enduml

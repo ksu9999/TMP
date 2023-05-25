@@ -1,0 +1,48 @@
+@startuml
+title Пратическая работа 4: Visitor
+
+class OrderItemVisitor{
+<<interface>>
+visit(self, item)
+}
+
+class ItemElement{
+<<interface>>
+accept(self, visitor: OrderItemVisitor)
+}
+
+class Clean{
+init()
+get_price(self)
+accept(self, visitor: OrderItemVisitor)
+}
+
+class  Oil{
+init()
+get_price(self)
+accept(self, visitor: OrderItemVisitor)
+}
+
+class WithOutDiscountVisitor{
+visit(self, item: ItemElement)
+}
+
+class CleanDiscountVisitor{
+visit(self, item: ItemElement)
+}
+
+class OilDiscountVisitor{
+visit(self, item: ItemElement)
+}
+
+WithOutDiscountVisitor..>OrderItemVisitor
+CleanDiscountVisitor..>OrderItemVisitor
+OilDiscountVisitor..>OrderItemVisitor
+
+OrderItemVisitor..>Clean
+OrderItemVisitor..>Oil
+
+ItemElement..left..>OrderItemVisitor
+Clean..>ItemElement
+Oil ..>ItemElement
+@enduml
