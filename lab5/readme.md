@@ -469,7 +469,7 @@ burger.printer()
 ### Код программы для диаграммы паттерна Адаптер
 ```
 @startuml
-title Пратическая работа 5: Mediator
+title Пратическая работа 5: Adapter
 
 class main{
 ad = AdapterEuroInUsa()
