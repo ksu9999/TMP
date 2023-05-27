@@ -1,0 +1,34 @@
+@startuml
+title Пратическая работа 6: Proxy
+
+class main{
+client(user: User)
+real_user = Real()
+proxy = Proxy(real_user)
+}
+
+class User{
+ex(self)
+}
+
+class Real{
+ex(self)
+}
+
+class Proxy{
+init()
+ex(self)
+access(self)
+}
+
+class PasswordService{
+init()
+get(self)
+}
+
+main->User
+User<.. Real
+User<..Proxy
+Proxy->Real
+main -down-> PasswordService
+@enduml

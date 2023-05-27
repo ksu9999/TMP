@@ -1,0 +1,40 @@
+@startuml
+title Пратическая работа 6: Composite
+
+class main{
+    Hi = Element()
+    Item1 = Element()
+    Item2 = Element()
+    Item3 = Element()
+    Item4 = Element()
+    Item11 = Leaf()
+    Item12 = Leaf()
+    Item21 = Leaf()
+    Item22 = Leaf()
+    Item31 = Leaf()
+    Item32 = Leaf()
+    Item41 = Leaf()
+    Item42 = Leaf()
+    Item43 = Leaf()
+    Item44 = Leaf()
+}
+
+class Leaf{
+init()
+show(self)
+showNum(self)
+}
+
+class Element{
+init()
+add(self, child)
+remove(self, child)
+show(self)
+showNum(self)
+}
+
+main<.. Leaf
+main<..Element
+Element*->main
+
+@enduml
