@@ -43,7 +43,7 @@ add_c()
 calculation()
 ```
 ### Результат реализации паттерна Инверсия управления
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab5/rr6.1.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab6/rr6.1.png)
 ### Код программы для диаграммы паттерна Заместитель
 ```
 @startuml
@@ -82,7 +82,7 @@ main -down-> PasswordService
 @enduml
 ```
 ### Диаграмма паттерна Заместитель
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab5/pr6.2.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab6/pr6.2.png)
 ### Код программы для реализации паттерна Заместитель
 ```
 # coding=windows-1251
@@ -149,7 +149,7 @@ if __name__ == "__main__":
     client(proxy)
 ```
 ### Результат реализации паттерна Заместитель
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab5/rr6.2.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab6/rr6.2.png)
 ### Код программы для диаграммы паттерна Компоновщик
 ```
 @startuml
@@ -194,7 +194,7 @@ Element*->main
 @enduml
 ```
 ### Диаграмма паттерна Компоновщик
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab5/pr6.3.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab6/pr6.3.png)
 ### Код программы для реализации паттерна Компоновщик
 ```
 # coding=windows-1251
@@ -277,4 +277,4 @@ if __name__ == "__main__":
     Hi.showNum()
 ```
 ### Результат реализации паттерна Компоновщик
-![alt text](https://github.com/ksu9999/TMP/blob/master/lab5/rr6.3.png)
+![alt text](https://github.com/ksu9999/TMP/blob/master/lab6/rr6.3.png)
